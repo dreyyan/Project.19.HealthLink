@@ -94,7 +94,7 @@ class Patient(Person):
             except ValueError as e:
                 print(f"ERROR: {e}")
 
-        else:
             pressEnterToContinue()
+
 person: Patient = Patient("Adrian Dominic L. Tan", "2005-07-29", 'M', "Filipino", "Iloilo City, Iloilo", "09382277245", "adriandominic.tan@wvsu.edu.ph")
 person.display_main_menu()
