@@ -8,7 +8,7 @@ from msys.pressEnterToContinue import pressEnterToContinue
 
 ''' IMPORTS '''
 from datetime import datetime, date
-import time, re
+import time, re, sys, json
 
 class Person:
     def __init__(self, name: str, birthdate: date):
@@ -42,6 +42,14 @@ class Patient(Person):
         lineDelayAnimation(menu_title.center(25), 0.1)
         displayFormat('*', 25)
 
+    @staticmethod
+    def reset_input():
+        time.sleep(2)
+        for i in range(2):
+            sys.stdout.write("\033[F")
+            sys.stdout.write("\033[K")
+        sys.stdout.flush()
+
     ''' CUSTOM EXCEPTIONS ''' 
     class InvalidNameError(Exception):
         pass
@@ -67,7 +75,7 @@ class Patient(Person):
     ''' VALIDATIONS '''
     def validate_name(name: str) -> None:
         if len(name) == 0: # ERROR: blank input
-            raise Patient.InvalidNameError("Name must not be blank")
+            raise Patient.InvalidNameError("Name must not be empty")
         
         if bool(re.search(r'\d', name)): # ERROR: number/s input
             raise Patient.InvalidNameError("Name must not contain numbers")
@@ -79,19 +87,32 @@ class Patient(Person):
             raise Patient.InvalidNameError("Name must be between 2 to 50 characters")
  
     def validate_gender(gender: str) -> None:
-        pass
+        if gender.lower() not in ['m', 'f']:
+            raise Patient.InvalidGenderError("Pick a valid gender (M/F)")
 
     def validate_date_of_birth(date_of_birth: date) -> None:
         pass
 
     def validate_nationality(nationality: str) -> None:
-        pass
+        with open("nationalities.json", 'r') as file:
+            data = json.load(file)
 
+        if nationality.lower() not in (n.lower() for n in data):
+            raise Patient.InvalidNationalityError("Nationality does not exist")
+        
     def validate_address(address: str) -> None:
-        pass
+        if len(address) == 0:
+            raise Patient.InvalidAddressError("Address must not be empty")
+        
+        if not (10 < len(address) < 100):
+            raise Patient.InvalidAddressError("Address must be between 10 to 100 characters")
 
     def validate_contact_number(contact_number: str) -> None:
-        pass
+        if len(contact_number) == 0:
+            raise Patient.InvalidContactNumberError("Contact number must not be empty")
+        
+        if not (5 <= len(contact_number)) <= 11:
+            raise Patient.InvalidContactNumberError("Contact number must be between 5-11 digits")
 
     def validate_email(email: str) -> None:
         pass
@@ -115,71 +136,78 @@ class Patient(Person):
         while True:
             try:
                 patient_name: str = input("[ Enter Name of Patient ] >> ").strip()
-                Patient.validate_name()
+                Patient.validate_name(patient_name)
                 break
 
-            except Patient.InvalidNameError:
-                errorMessage("Invalid input, please enter a valid name")
+            except Patient.InvalidNameError as e:
+                errorMessage(str(e))
+                Patient.reset_input() 
 
         # Gender Validation    
         while True:
             try:
                 patient_gender: str = input("[ Enter Gender ] >> ").strip()
-                Patient.validate_gender()
+                Patient.validate_gender(patient_gender)
                 break
                     
-            except Patient.InvalidGenderError:
-                errorMessage("Invalid input, please enter a valid gender")
+            except Patient.InvalidGenderError as e:
+                errorMessage(str(e))
+                Patient.reset_input()
 
         # Date of Birth Validation
         while True:
             try:
                 patient_date_of_birth: str = input("[ Enter Date of Birth ] >> ").strip()
-                Patient.validate_date_of_birth()
+                Patient.validate_date_of_birth(patient_date_of_birth)
                 break
                     
-            except Patient.InvalidDateOfBirthError:
-                errorMessage("Invalid input, please enter a valid date of birth")
+            except Patient.InvalidDateOfBirthError as e:
+                errorMessage(str(e))
+                Patient.reset_input()
 
         # Nationality Validation
         while True:
             try:
                 patient_nationality: str = input("[ Enter Nationality ] >> ").strip()
-                Patient.validate_nationality()
+                Patient.validate_nationality(patient_nationality)
                 break
                     
-            except Patient.InvalidNationalityError:
-                errorMessage("Invalid input, please enter a valid nationality")
+            except Patient.InvalidNationalityError as e:
+                errorMessage(str(e))
+                Patient.reset_input()
 
         # Address Validation
         while True:
             try:
-                patient_name: str = input("[ Enter Address ] >> ").strip()
-                Patient.validate_address()
+                patient_address: str = input("[ Enter Address ] >> ").strip()
+                Patient.validate_address(patient_address)
                 break
                     
-            except Patient.InvalidAddressError:
-                errorMessage("Invalid input, please enter a valid address")
+            except Patient.InvalidAddressError as e:
+                errorMessage(str(e))
+                Patient.reset_input()
 
         # Contact No. Validation
         while True:
             try:
-                patient_name: str = input("[ Enter Contact No. ] >> ").strip()
-                Patient.validate_contact_number()
+                patient_contact_number: str = input("[ Enter Contact No. ] >> ").strip()
+                Patient.validate_contact_number(patient_contact_number)
                 break
                     
-            except Patient.InvalidContactNumberError:
-                errorMessage("Invalid input, please enter a valid contact no.")
+            except Patient.InvalidContactNumberError as e:
+                errorMessage(str(e))
+                Patient.reset_input()
 
         # Email Validation
         while True:
             try:
-                patient_name: str = input("[ Enter Email ] >> ").strip()
-                Patient.validate_email()
+                patient_email: str = input("[ Enter Email ] >> ").strip()
+                Patient.validate_email(patient_email)
                 break
                     
-            except Patient.InvalidEmailError:
-                errorMessage("Invalid input, please enter a valid email")
+            except Patient.InvalidEmailError as e:
+                errorMessage(str(e))
+                Patient.reset_input()
             
     def patient_list():
         Patient.display_header("Patient List")

@@ -1,0 +1,786 @@
+[
+  {
+    "nationality": "Afghan",
+    "code": "+93"
+  },
+  {
+    "nationality": "Albanian",
+    "code": "+355"
+  },
+  {
+    "nationality": "Algerian",
+    "code": "+213"
+  },
+  {
+    "nationality": "Andorran",
+    "code": "+376"
+  },
+  {
+    "nationality": "Angolan",
+    "code": "+244"
+  },
+  {
+    "nationality": "Antiguan, Barbudan",
+    "code": "+1-268"
+  },
+  {
+    "nationality": "Argentine",
+    "code": "+54"
+  },
+  {
+    "nationality": "Armenian",
+    "code": "+374"
+  },
+  {
+    "nationality": "Australian",
+    "code": "+61"
+  },
+  {
+    "nationality": "Austrian",
+    "code": "+43"
+  },
+  {
+    "nationality": "Azerbaijani",
+    "code": "+994"
+  },
+  {
+    "nationality": "Bahamian",
+    "code": "+1-242"
+  },
+  {
+    "nationality": "Bahraini",
+    "code": "+973"
+  },
+  {
+    "nationality": "Bangladeshi",
+    "code": "+880"
+  },
+  {
+    "nationality": "Barbadian",
+    "code": "+1-246"
+  },
+  {
+    "nationality": "Belarusian",
+    "code": "+375"
+  },
+  {
+    "nationality": "Belgian",
+    "code": "+32"
+  },
+  {
+    "nationality": "Belizean",
+    "code": "+501"
+  },
+  {
+    "nationality": "Beninese",
+    "code": "+229"
+  },
+  {
+    "nationality": "Bhutanese",
+    "code": "+975"
+  },
+  {
+    "nationality": "Bolivian",
+    "code": "+591"
+  },
+  {
+    "nationality": "Bosnian, Herzegovinian",
+    "code": "+387"
+  },
+  {
+    "nationality": "Motswana",
+    "code": "+267"
+  },
+  {
+    "nationality": "Brazilian",
+    "code": "+55"
+  },
+  {
+    "nationality": "Bruneian",
+    "code": "+673"
+  },
+  {
+    "nationality": "Bulgarian",
+    "code": "+359"
+  },
+  {
+    "nationality": "Burkinabe",
+    "code": "+226"
+  },
+  {
+    "nationality": "Burundian",
+    "code": "+257"
+  },
+  {
+    "nationality": "Cape Verdean",
+    "code": "+238"
+  },
+  {
+    "nationality": "Cambodian",
+    "code": "+855"
+  },
+  {
+    "nationality": "Cameroonian",
+    "code": "+237"
+  },
+  {
+    "nationality": "Canadian",
+    "code": "+1"
+  },
+  {
+    "nationality": "Central African",
+    "code": "+236"
+  },
+  {
+    "nationality": "Chadian",
+    "code": "+235"
+  },
+  {
+    "nationality": "Chilean",
+    "code": "+56"
+  },
+  {
+    "nationality": "Chinese",
+    "code": "+86"
+  },
+  {
+    "nationality": "Colombian",
+    "code": "+57"
+  },
+  {
+    "nationality": "Comorian",
+    "code": "+269"
+  },
+  {
+    "nationality": "Congolese",
+    "code": "+242"
+  },
+  {
+    "nationality": "Congolese",
+    "code": "+243"
+  },
+  {
+    "nationality": "Costa Rican",
+    "code": "+506"
+  },
+  {
+    "nationality": "Croatian",
+    "code": "+385"
+  },
+  {
+    "nationality": "Cuban",
+    "code": "+53"
+  },
+  {
+    "nationality": "Cypriot",
+    "code": "+357"
+  },
+  {
+    "nationality": "Czech",
+    "code": "+420"
+  },
+  {
+    "nationality": "Danish",
+    "code": "+45"
+  },
+  {
+    "nationality": "Djiboutian",
+    "code": "+253"
+  },
+  {
+    "nationality": "Dominican",
+    "code": "+1-767"
+  },
+  {
+    "nationality": "Dominican",
+    "code": "+1-809"
+  },
+  {
+    "nationality": "Ecuadorean",
+    "code": "+593"
+  },
+  {
+    "nationality": "Egyptian",
+    "code": "+20"
+  },
+  {
+    "nationality": "Salvadoran",
+    "code": "+503"
+  },
+  {
+    "nationality": "Equatorial Guinean",
+    "code": "+240"
+  },
+  {
+    "nationality": "Eritrean",
+    "code": "+291"
+  },
+  {
+    "nationality": "Estonian",
+    "code": "+372"
+  },
+  {
+    "nationality": "Swazi",
+    "code": "+268"
+  },
+  {
+    "nationality": "Ethiopian",
+    "code": "+251"
+  },
+  {
+    "nationality": "Fijian",
+    "code": "+679"
+  },
+  {
+    "nationality": "Finnish",
+    "code": "+358"
+  },
+  {
+    "nationality": "French",
+    "code": "+33"
+  },
+  {
+    "nationality": "Gabonese",
+    "code": "+241"
+  },
+  {
+    "nationality": "Gambian",
+    "code": "+220"
+  },
+  {
+    "nationality": "Georgian",
+    "code": "+995"
+  },
+  {
+    "nationality": "German",
+    "code": "+49"
+  },
+  {
+    "nationality": "Ghanaian",
+    "code": "+233"
+  },
+  {
+    "nationality": "Greek",
+    "code": "+30"
+  },
+  {
+    "nationality": "Grenadian",
+    "code": "+1-473"
+  },
+  {
+    "nationality": "Guatemalan",
+    "code": "+502"
+  },
+  {
+    "nationality": "Guinean",
+    "code": "+224"
+  },
+  {
+    "nationality": "Guinea-Bissauan",
+    "code": "+245"
+  },
+  {
+    "nationality": "Guyanese",
+    "code": "+592"
+  },
+  {
+    "nationality": "Haitian",
+    "code": "+509"
+  },
+  {
+    "nationality": "Honduran",
+    "code": "+504"
+  },
+  {
+    "nationality": "Hungarian",
+    "code": "+36"
+  },
+  {
+    "nationality": "Icelandic",
+    "code": "+354"
+  },
+  {
+    "nationality": "Indian",
+    "code": "+91"
+  },
+  {
+    "nationality": "Indonesian",
+    "code": "+62"
+  },
+  {
+    "nationality": "Iranian",
+    "code": "+98"
+  },
+  {
+    "nationality": "Iraqi",
+    "code": "+964"
+  },
+  {
+    "nationality": "Irish",
+    "code": "+353"
+  },
+  {
+    "nationality": "Israeli",
+    "code": "+972"
+  },
+  {
+    "nationality": "Italian",
+    "code": "+39"
+  },
+  {
+    "nationality": "Ivorian",
+    "code": "+225"
+  },
+  {
+    "nationality": "Jamaican",
+    "code": "+1-876"
+  },
+  {
+    "nationality": "Japanese",
+    "code": "+81"
+  },
+  {
+    "nationality": "Jordanian",
+    "code": "+962"
+  },
+  {
+    "nationality": "Kazakhstani",
+    "code": "+7"
+  },
+  {
+    "nationality": "Kenyan",
+    "code": "+254"
+  },
+  {
+    "nationality": "I-Kiribati",
+    "code": "+686"
+  },
+  {
+    "nationality": "Kuwaiti",
+    "code": "+965"
+  },
+  {
+    "nationality": "Kyrgyz",
+    "code": "+996"
+  },
+  {
+    "nationality": "Laotian",
+    "code": "+856"
+  },
+  {
+    "nationality": "Latvian",
+    "code": "+371"
+  },
+  {
+    "nationality": "Lebanese",
+    "code": "+961"
+  },
+  {
+    "nationality": "Mosotho",
+    "code": "+266"
+  },
+  {
+    "nationality": "Liberian",
+    "code": "+231"
+  },
+  {
+    "nationality": "Libyan",
+    "code": "+218"
+  },
+  {
+    "nationality": "Liechtensteiner",
+    "code": "+423"
+  },
+  {
+    "nationality": "Lithuanian",
+    "code": "+370"
+  },
+  {
+    "nationality": "Luxembourgish",
+    "code": "+352"
+  },
+  {
+    "nationality": "Malagasy",
+    "code": "+261"
+  },
+  {
+    "nationality": "Malawian",
+    "code": "+265"
+  },
+  {
+    "nationality": "Malaysian",
+    "code": "+60"
+  },
+  {
+    "nationality": "Maldivian",
+    "code": "+960"
+  },
+  {
+    "nationality": "Malian",
+    "code": "+223"
+  },
+  {
+    "nationality": "Maltese",
+    "code": "+356"
+  },
+  {
+    "nationality": "Marshallese",
+    "code": "+692"
+  },
+  {
+    "nationality": "Mauritanian",
+    "code": "+222"
+  },
+  {
+    "nationality": "Mauritian",
+    "code": "+230"
+  },
+  {
+    "nationality": "Mexican",
+    "code": "+52"
+  },
+  {
+    "nationality": "Micronesian",
+    "code": "+691"
+  },
+  {
+    "nationality": "Moldovan",
+    "code": "+373"
+  },
+  {
+    "nationality": "Monégasque",
+    "code": "+377"
+  },
+  {
+    "nationality": "Mongolian",
+    "code": "+976"
+  },
+  {
+    "nationality": "Montenegrin",
+    "code": "+382"
+  },
+  {
+    "nationality": "Moroccan",
+    "code": "+212"
+  },
+  {
+    "nationality": "Mozambican",
+    "code": "+258"
+  },
+  {
+    "nationality": "Burmese",
+    "code": "+95"
+  },
+  {
+    "nationality": "Namibian",
+    "code": "+264"
+  },
+  {
+    "nationality": "Nauruan",
+    "code": "+674"
+  },
+  {
+    "nationality": "Nepalese",
+    "code": "+977"
+  },
+  {
+    "nationality": "Dutch",
+    "code": "+31"
+  },
+  {
+    "nationality": "New Zealander",
+    "code": "+64"
+  },
+  {
+    "nationality": "Nicaraguan",
+    "code": "+505"
+  },
+  {
+    "nationality": "Nigerien",
+    "code": "+227"
+  },
+  {
+    "nationality": "Nigerian",
+    "code": "+234"
+  },
+  {
+    "nationality": "North Korean",
+    "code": "+850"
+  },
+  {
+    "nationality": "Macedonian",
+    "code": "+389"
+  },
+  {
+    "nationality": "Norwegian",
+    "code": "+47"
+  },
+  {
+    "nationality": "Omani",
+    "code": "+968"
+  },
+  {
+    "nationality": "Pakistani",
+    "code": "+92"
+  },
+  {
+    "nationality": "Palauan",
+    "code": "+680"
+  },
+  {
+    "nationality": "Palestinian",
+    "code": "+970"
+  },
+  {
+    "nationality": "Panamanian",
+    "code": "+507"
+  },
+  {
+    "nationality": "Papua New Guinean",
+    "code": "+675"
+  },
+  {
+    "nationality": "Paraguayan",
+    "code": "+595"
+  },
+  {
+    "nationality": "Peruvian",
+    "code": "+51"
+  },
+  {
+    "nationality": "Filipino",
+    "code": "+63"
+  },
+  {
+    "nationality": "Polish",
+    "code": "+48"
+  },
+  {
+    "nationality": "Portuguese",
+    "code": "+351"
+  },
+  {
+    "nationality": "Qatari",
+    "code": "+974"
+  },
+  {
+    "nationality": "Romanian",
+    "code": "+40"
+  },
+  {
+    "nationality": "Russian",
+    "code": "+7"
+  },
+  {
+    "nationality": "Rwandan",
+    "code": "+250"
+  },
+  {
+    "nationality": "Kittitian, Nevisian",
+    "code": "+1-869"
+  },
+  {
+    "nationality": "Saint Lucian",
+    "code": "+1-758"
+  },
+  {
+    "nationality": "Saint Vincentian",
+    "code": "+1-784"
+  },
+  {
+    "nationality": "Samoan",
+    "code": "+685"
+  },
+  {
+    "nationality": "Sammarinese",
+    "code": "+378"
+  },
+  {
+    "nationality": "Sao Tomean",
+    "code": "+239"
+  },
+  {
+    "nationality": "Saudi Arabian",
+    "code": "+966"
+  },
+  {
+    "nationality": "Senegalese",
+    "code": "+221"
+  },
+  {
+    "nationality": "Serbian",
+    "code": "+381"
+  },
+  {
+    "nationality": "Seychellois",
+    "code": "+248"
+  },
+  {
+    "nationality": "Sierra Leonean",
+    "code": "+232"
+  },
+  {
+    "nationality": "Singaporean",
+    "code": "+65"
+  },
+  {
+    "nationality": "Slovak",
+    "code": "+421"
+  },
+  {
+    "nationality": "Slovenian",
+    "code": "+386"
+  },
+  {
+    "nationality": "Solomon Islander",
+    "code": "+677"
+  },
+  {
+    "nationality": "Somali",
+    "code": "+252"
+  },
+  {
+    "nationality": "South African",
+    "code": "+27"
+  },
+  {
+    "nationality": "South Korean",
+    "code": "+82"
+  },
+  {
+    "nationality": "South Sudanese",
+    "code": "+211"
+  },
+  {
+    "nationality": "Spanish",
+    "code": "+34"
+  },
+  {
+    "nationality": "Sri Lankan",
+    "code": "+94"
+  },
+  {
+    "nationality": "Sudanese",
+    "code": "+249"
+  },
+  {
+    "nationality": "Surinamese",
+    "code": "+597"
+  },
+  {
+    "nationality": "Swedish",
+    "code": "+46"
+  },
+  {
+    "nationality": "Swiss",
+    "code": "+41"
+  },
+  {
+    "nationality": "Syrian",
+    "code": "+963"
+  },
+  {
+    "nationality": "Taiwanese",
+    "code": "+886"
+  },
+  {
+    "nationality": "Tajikistani",
+    "code": "+992"
+  },
+  {
+    "nationality": "Tanzanian",
+    "code": "+255"
+  },
+  {
+    "nationality": "Thai",
+    "code": "+66"
+  },
+  {
+    "nationality": "Timorese",
+    "code": "+670"
+  },
+  {
+    "nationality": "Togolese",
+    "code": "+228"
+  },
+  {
+    "nationality": "Tongan",
+    "code": "+676"
+  },
+  {
+    "nationality": "Trinidadian, Tobagonian",
+    "code": "+1-868"
+  },
+  {
+    "nationality": "Tunisian",
+    "code": "+216"
+  },
+  {
+    "nationality": "Turkish",
+    "code": "+90"
+  },
+  {
+    "nationality": "Turkmen",
+    "code": "+993"
+  },
+  {
+    "nationality": "Tuvaluan",
+    "code": "+688"
+  },
+  {
+    "nationality": "Ugandan",
+    "code": "+256"
+  },
+  {
+    "nationality": "Ukrainian",
+    "code": "+380"
+  },
+  {
+    "nationality": "Emirati",
+    "code": "+971"
+  },
+  {
+    "nationality": "British",
+    "code": "+44"
+  },
+  {
+    "nationality": "American",
+    "code": "+1"
+  },
+  {
+    "nationality": "Uruguayan",
+    "code": "+598"
+  },
+  {
+    "nationality": "Uzbekistani",
+    "code": "+998"
+  },
+  {
+    "nationality": "Ni-Vanuatu",
+    "code": "+678"
+  },
+  {
+    "nationality": "Vatican",
+    "code": "+39"
+  },
+  {
+    "nationality": "Venezuelan",
+    "code": "+58"
+  },
+  {
+    "nationality": "Vietnamese",
+    "code": "+84"
+  },
+  {
+    "nationality": "Yemeni",
+    "code": "+967"
+  },
+  {
+    "nationality": "Zambian",
+    "code": "+260"
+  },
+  {
+    "nationality": "Zimbabwean",
+    "code": "+263"
+  }
+]
