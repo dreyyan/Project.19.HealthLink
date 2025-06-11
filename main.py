@@ -8,7 +8,7 @@ from msys.pressEnterToContinue import pressEnterToContinue
 
 ''' IMPORTS '''
 from datetime import datetime, date
-import time
+import time, re
 
 class Person:
     def __init__(self, name: str, birthdate: date):
@@ -35,37 +35,167 @@ class Patient(Person):
         self.phone_number = phone_number
         self.email = email
 
+    ''' UTILITIES '''
+    @staticmethod
+    def display_header(menu_title: str):         
+        lineDelayAnimation("      [ HealthLink ]", 0.1)
+        lineDelayAnimation(menu_title.center(25), 0.1)
+        displayFormat('*', 25)
+
+    ''' CUSTOM EXCEPTIONS ''' 
+    class InvalidNameError(Exception):
+        pass
+    
+    class InvalidGenderError(Exception):
+        pass
+
+    class InvalidDateOfBirthError(Exception):
+        pass
+    
+    class InvalidNationalityError(Exception):
+        pass
+    
+    class InvalidAddressError(Exception):
+        pass
+    
+    class InvalidContactNumberError(Exception):
+        pass
+    
+    class InvalidEmailError(Exception):
+        pass
+
+    ''' VALIDATIONS '''
+    def validate_name(name: str) -> None:
+        if len(name) == 0: # ERROR: blank input
+            raise Patient.InvalidNameError("Name must not be blank")
+        
+        if bool(re.search(r'\d', name)): # ERROR: number/s input
+            raise Patient.InvalidNameError("Name must not contain numbers")
+
+        if bool(re.search(r'[^A-Za-z0-9\s]', name)): # ERROR: special character/s input
+            raise Patient.InvalidNameError("Name must not contain special characters")
+
+        if not (2 < len(name) < 50):
+            raise Patient.InvalidNameError("Name must be between 2 to 50 characters")
+ 
+    def validate_gender(gender: str) -> None:
+        pass
+
+    def validate_date_of_birth(date_of_birth: date) -> None:
+        pass
+
+    def validate_nationality(nationality: str) -> None:
+        pass
+
+    def validate_address(address: str) -> None:
+        pass
+
+    def validate_contact_number(contact_number: str) -> None:
+        pass
+
+    def validate_email(email: str) -> None:
+        pass
+        
     ''' METHODS '''
     def display_information(self) -> None:
         lineDelayAnimation(f"{'':<4}[ PATIENT INFORMATION ]", 0.2)
         lineDelayAnimation(f"{'Name: ':>14}{self.name}", 0.2)
         lineDelayAnimation(f"{'Age: ':>14}{self.get_age()}", 0.2)
         lineDelayAnimation(f"{'Gender: ':>14}{self.gender}", 0.2)
-        lineDelayAnimation(f"{'Birthday: ':>14}{self.birthdate}", 0.2)
+        lineDelayAnimation(f"{'Date of Birth: ':>14}{self.birthdate}", 0.2)
         lineDelayAnimation(f"{'Nationality: ':>14}{self.nationality}", 0.2)
         lineDelayAnimation(f"{'Address: ':>14}{self.address}", 0.2)
         lineDelayAnimation(f"{'Contact No.: ':>14}{self.phone_number}", 0.2)
         lineDelayAnimation(f"{'Email: ':>14}{self.email}", 0.2)
 
     def admit_new_patient():
-        print("admitting new patient...")
+        Patient.display_header("Admit New Patient")
 
+        # Name Validation
+        while True:
+            try:
+                patient_name: str = input("[ Enter Name of Patient ] >> ").strip()
+                Patient.validate_name()
+                break
+
+            except Patient.InvalidNameError:
+                errorMessage("Invalid input, please enter a valid name")
+
+        # Gender Validation    
+        while True:
+            try:
+                patient_gender: str = input("[ Enter Gender ] >> ").strip()
+                Patient.validate_gender()
+                break
+                    
+            except Patient.InvalidGenderError:
+                errorMessage("Invalid input, please enter a valid gender")
+
+        # Date of Birth Validation
+        while True:
+            try:
+                patient_date_of_birth: str = input("[ Enter Date of Birth ] >> ").strip()
+                Patient.validate_date_of_birth()
+                break
+                    
+            except Patient.InvalidDateOfBirthError:
+                errorMessage("Invalid input, please enter a valid date of birth")
+
+        # Nationality Validation
+        while True:
+            try:
+                patient_nationality: str = input("[ Enter Nationality ] >> ").strip()
+                Patient.validate_nationality()
+                break
+                    
+            except Patient.InvalidNationalityError:
+                errorMessage("Invalid input, please enter a valid nationality")
+
+        # Address Validation
+        while True:
+            try:
+                patient_name: str = input("[ Enter Address ] >> ").strip()
+                Patient.validate_address()
+                break
+                    
+            except Patient.InvalidAddressError:
+                errorMessage("Invalid input, please enter a valid address")
+
+        # Contact No. Validation
+        while True:
+            try:
+                patient_name: str = input("[ Enter Contact No. ] >> ").strip()
+                Patient.validate_contact_number()
+                break
+                    
+            except Patient.InvalidContactNumberError:
+                errorMessage("Invalid input, please enter a valid contact no.")
+
+        # Email Validation
+        while True:
+            try:
+                patient_name: str = input("[ Enter Email ] >> ").strip()
+                Patient.validate_email()
+                break
+                    
+            except Patient.InvalidEmailError:
+                errorMessage("Invalid input, please enter a valid email")
+            
     def patient_list():
-        print("displaying patient list...")
+        Patient.display_header("Patient List")
 
     def update_patient_record():
-        print("updating patient record...")
+        Patient.display_header("Update Patient Record")
 
     def discharge_patient():
-        print("discharging patient...")
+        Patient.display_header("Discharge Patient")
 
     @staticmethod
     def display_main_menu():
         while True:
             clearScreen()
             try:
-                lineDelayAnimation("     [ HealthLink ]", 0.1)
-                displayFormat('*', 25)
+                Patient.display_header("Main Menu")
                 lineDelayAnimation("[1] Admit New Patient", 0.1)
                 lineDelayAnimation("[2] Patient List", 0.1)
                 lineDelayAnimation("[3] Update Patient Record", 0.1)
@@ -76,6 +206,9 @@ class Patient(Person):
                 # prompt user to enter choice
                 user_choice = input("~ ").strip().lower()
 
+                # clear screen before navigating
+                clearScreen()
+
                 if user_choice in ["1", "admit"]:
                     Patient.admit_new_patient()
                 elif user_choice in ["2", "list"]:
@@ -85,7 +218,8 @@ class Patient(Person):
                 elif user_choice in ["4", "discharge"]:
                     Patient.discharge_patient()
                 elif user_choice in ["5", "exit"]:
-                    print("# exiting system...")
+                    clearScreen()
+                    characterDelayAnimation("` exiting system... `", 0.1)
                     time.sleep(2)
                     break
                 else:
